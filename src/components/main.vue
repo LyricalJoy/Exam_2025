@@ -37,6 +37,7 @@ function validateAnswer(question) {
 <template>
     <div class="form">   
         <h1>Форма заявки.</h1>
+      
         <h2>Для тогоч тобы закзать услугу фотостудии заполните форму!</h2>
         <label> Имя<input type="text" v-model="userName" placeholder="Иван"/></label>
         <p v-if="nameError" class="error">{{ nameError }}</p>
@@ -54,6 +55,7 @@ function validateAnswer(question) {
         <p v-if="nameError" class="error">{{ nameError }}</p>
         <button @click="order">Заказать</button>
         <p v-if="error" class="error">{{ error }}</p>
+        
     </div>
     <div class="footer">
         <h3>Наши контакты: </h3>
@@ -65,6 +67,7 @@ function validateAnswer(question) {
 </template>
 
 <style scoped>
+
 input {
   padding: 8px;
   font-size: 14px;
@@ -78,10 +81,12 @@ input {
   font-size: 14px;
 }
 .form {
+    background-color: rgb(255, 206, 141);
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 70px;
 }
 button {
     margin-left: 500px;
@@ -90,12 +95,14 @@ button {
     background-color: tomato;
 }
 .footer {
-    margin-top: 100px;
     width: 1200px;
     height: 300px;
-    background-color: rgb(131, 131, 131);
+    background-color: rgb(253, 175, 123);
 }
 input {
+    color: black;
+    border-radius: 20px;
+    background-color: rgb(255, 215, 169);
     margin-left: 20px;
     padding-left: 20px;
 }
