@@ -2,7 +2,6 @@
 import {ref, reactive} from 'vue'
 
 // переменные для сохранения данных
-
 const userName = ref('');
 const number1 = ref('');
 const nameError = ref('');
@@ -57,6 +56,10 @@ function validateAnswer(question) {
         <p v-if="error" class="error">{{ error }}</p>
     </div>
     <div class="footer">
+        <h3>Наши контакты: </h3>
+        <p>Тел.: +7 (823) 234 44 03</p>
+        <p>Адресс.: Большой прс ПС 45Б 74 Санкт-Петербург</p>
+        <p>Почта: salute@mail.ru</p>
         <p>"ООО" Фотостудия “Салют” все права защищены.</p>
     </div>
 </template>
@@ -91,9 +94,6 @@ button {
     width: 1200px;
     height: 300px;
     background-color: rgb(131, 131, 131);
-}
-p {
-    padding: 70px;
 }
 input {
     margin-left: 20px;
